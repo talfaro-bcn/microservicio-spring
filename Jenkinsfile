@@ -8,4 +8,11 @@ node {
   stage('Test'){
   sh "./gradlew clean test"
   }
+
+  stage('Deploy') {
+    steps {
+        echo 'Deploying....'
+    }
+  }
+
 }
